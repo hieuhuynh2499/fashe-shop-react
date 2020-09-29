@@ -1,0 +1,111 @@
+.features {
+    &__bg {
+        background-image: url(../../assets/images/heading-pages-02.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        & h2 {
+            font-size: 50px;
+            color: white;
+            line-height: 1.2;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
+    &__payMoney {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #e6e6e6;
+        padding: 40px;
+        margin-bottom: 50px;
+        &__code {
+            & input {
+                border: 1px solid #e6e6e6;
+                outline: none;
+                padding: 15px;
+                font-size: 15px;
+                color: #555555;
+                line-height: 1.8;
+                text-transform: capitalize;
+            }
+        }
+        &__btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 40px;
+            border: none;
+            outline: none;
+            text-transform: uppercase;
+            margin-left: 20px;
+            &:focus {
+                outline: none;
+            }
+        }
+        &__total {
+            font-size: 18px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.table {
+    min-width: 1000px;
+    max-width: 1400px;
+    overflow: scroll;
+    & tr th {
+        border: none;
+        font-size: 15px;
+        color: #555555;
+        line-height: 1.5;
+        text-transform: uppercase;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    & .tbody {
+        &__tr {
+            border: 1px solid #e6e6e6;
+            &__amount {
+                display: inline-block;
+                padding: 10px;
+                background-color: #e6e6e6;
+            }
+            & td {
+                font-size: 17px;
+                color: #555555;
+                line-height: 1.5;
+                padding-top: 15px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .features {
+        &__payMoney {
+            flex-direction: column;
+            &__code {
+                margin-bottom: 30px;
+            }
+            &__total {
+                margin-right: 123px;
+            }
+            &__btn {
+                padding: 10px 15px;
+                font-size: 15px;
+            }
+        }
+    }
+    .features__table {
+        overflow-x: scroll;
+    }
+}

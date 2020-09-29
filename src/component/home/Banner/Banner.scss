@@ -1,0 +1,61 @@
+.banner {
+    background-image: url(../../../assets/images/master-slide-04.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        top: 0;
+        left: 0;
+    }
+    &__caption {
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        & h3 {
+            font-family: Montserrat-Regular, sans-serif;
+            font-size: 18px;
+            color: white;
+            line-height: 1.5;
+            letter-spacing: 2px;
+        }
+        & h2 {
+            font-family: Montserrat-Regular, sans-serif;
+            font-size: 60px;
+            color: white;
+            line-height: 1.2;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+    }
+    &--link {
+        color: white;
+        background: #e65540;
+        display: inline-block;
+        padding: 10px 40px;
+        border-radius: 40px;
+        text-transform: capitalize;
+        &:hover {
+            background: #e65540;
+            color: white;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .banner__caption {
+        & h2 {
+            font-size: 50px;
+        }
+    }
+}

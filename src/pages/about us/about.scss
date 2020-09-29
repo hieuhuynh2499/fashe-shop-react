@@ -1,0 +1,53 @@
+.about {
+    padding: 0 0 50px;
+    &__bg {
+        background-image: url(../../assets/images/heading-pages-06.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        & h2 {
+            font-size: 50px;
+            color: white;
+            line-height: 1.2;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
+    &__left {
+        overflow: hidden;
+        margin-bottom: 30px;
+        &:hover img {
+            transform: scale(1.1);
+        }
+        & img {
+            width: 100%;
+            transition: all 0.8s ease;
+        }
+    }
+    &__right {
+        &__top {
+            & h4 {
+                font-size: 25px;
+                color: #333333;
+                line-height: 1.2;
+            }
+        }
+        &__bottom {
+            padding-left: 30px;
+            border-left: 3px solid #e6e6e6;
+        }
+        & p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #888888;
+            margin: 0px;
+        }
+    }
+}

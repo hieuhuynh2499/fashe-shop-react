@@ -1,0 +1,90 @@
+.shop {
+    margin-bottom: 50px;
+    &__bg {
+        background-image: url(../../assets/images/heading-pages-02.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        & h2 {
+            font-size: 50px;
+            color: white;
+            line-height: 1.2;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        & h4 {
+            font-size: 18px;
+            color: white;
+            line-height: 1.8;
+        }
+    }
+    &__sidebars {
+        & ul li {
+            font-size: 15px;
+            color: #888888;
+            line-height: 1.8;
+            text-transform: capitalize;
+            font-weight: 400;
+        }
+    }
+    &__filter {
+        &__range {
+            border-bottom: 1px #e1e1e1 solid;
+            border-top: 1px solid #e1e1e1;
+            padding: 20px 0 50px;
+            & input {
+                background-color: rosybrown;
+                height: 2px;
+                width: 80%;
+                margin-bottom: 15px;
+            }
+            &__filter {
+                display: inline-block;
+                background-color: #000;
+                color: #fff;
+                padding: 5px 20px;
+                margin-right: 30px;
+                border-radius: 30px;
+            }
+        }
+    }
+    &__sidebars__input {
+        position: relative;
+        border: 1px solid #e6e6e6;
+        border-radius: 2px;
+        & input {
+            width: 100%;
+            height: 50px;
+            border: none;
+            outline: none;
+            padding: 20px;
+        }
+        & button {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            background-color: transparent;
+            outline: none;
+            border: none;
+            font-size: 15px;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.shop__sidebars--titile {
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.5;
+    font-weight: 900;
+}

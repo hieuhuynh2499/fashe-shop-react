@@ -1,0 +1,1 @@
+import image from "./assets/images/item-02.jpg";
